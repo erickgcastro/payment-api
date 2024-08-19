@@ -1,6 +1,6 @@
 # API de Pagamento
 
-Este projeto é uma API de pagamento desenvolvida em Golang e uma interface de usuário em Next.js. A API é projetada para gerenciar transações financeiras, enquanto a aplicação frontend fornece uma interface para interagir com a API e visualizar informações relacionadas a pagamentos.
+Este projeto é uma API de pagamento desenvolvida em Golang e uma interface de usuário em Next.js. A API é projetada para gerenciar pagamentos, enquanto a aplicação frontend fornece uma interface para interagir com a API e visualizar informações relacionadas a pagamentos.
 
 ## Executando o Projeto Localmente
 
