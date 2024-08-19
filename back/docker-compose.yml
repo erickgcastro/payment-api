@@ -1,0 +1,24 @@
+services:
+  database:
+    image: postgres:13
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: adm
+      POSTGRES_PASSWORD: adm
+      POSTGRES_DB: db
+    networks:
+      - go-payment-api
+
+  backend:
+    build: .
+    ports:
+      - 5000:5000
+    env_file:
+      - ./.env.example
+    depends_on:
+      - database
+    networks:
+      - go-payment-api
+networks:
+  go-payment-api:
